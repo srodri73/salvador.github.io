@@ -81,62 +81,44 @@
       flex-basis: 50%;
       padding: 20px;
     }
+/* Styles for mobile */
+@media (max-width: 768px) {
+  .text-area {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
 
-    /* Styles for mobile */
-    @media (max-width: 768px) {
-      .text-area {
-        position: static;
-        transform: none;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-      }
+  .container {
+    flex-direction: column;
+  }
 
-      .container {
-        flex-direction: column;
-      }
+  .container .image-container,
+  .container .text-container {
+    flex-basis: 100%;
+  }
 
-      .container .image-container,
-      .container .text-container {
-        flex-basis: 100%;
-      }
+  .container:nth-child(even) .image-container {
+    order: 2;
+    margin-top: 20px;
+  }
 
-      .container:nth-child(even) .image-container {
-        order: 1;
-        margin-top: 20px;
-      }
+  .container:nth-child(even) .text-container {
+    order: 1;
+  }
 
-      .container:nth-child(even) .text-container {
-        order: 2;
-      }
-    }
+  .container:nth-child(odd) .image-container {
+    order: 2;
+    margin-top: 20px;
+  }
 
-    .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 20px;
-      background-color: #333;
-    }
+  .container:nth-child(odd) .text-container {
+    order: 1;
+  }
+}
 
-    .footer a {
-      margin: 0 10px;
-    }
-
-    .footer img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-    }
-
-    .footer p {
-      margin: 10px 0;
-    }
-
-    .blue-text {
-      color: blue;
-    }
   </style>
 </head>
 <body>
@@ -200,8 +182,8 @@
   <!-- Add more containers as needed -->
 </section>
 <footer class="footer">
-  <a href="https://example.com/link1" target="_blank">
-    <img src="your-image-url-1" alt="Image button 1" />
+  <a href="http://www.linkedin.com/in/salvadorrod" target="_blank">
+    <img src="https://github.com/srodri73/salvador.github.io/blob/1518e65738d617fd869f3b7cd62befbbf0c226ed/LI-In-Bug.png?raw=true" alt="LinkedIn Profile" />
   </a>
   <a href="https://example.com/link2" target="_blank">
     <img src="your-image-url-2" alt="Image button 2" />
