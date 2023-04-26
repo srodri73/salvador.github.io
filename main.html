@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salvador Rodriguez Portfolio </title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  }
+  
+.logo {
+  margin-right: 20px;
+}
+
+  .header a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+
+  .header a:hover {
+    color: #ddd;
+    background-color: transparent;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
+  .text-area {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 33%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #111111;
+  }
+
+  .container:nth-child(even) .image-container {
+    order: 1;
+  }
+
+  .container .image-container {
+    flex-basis: 50%;
+  }
+
+  .container img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container .text-container {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .text-area {
+      position: static;
+      transform: none;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    .container .image-container,
+    .container .text-container {
+      flex-basis: 100%;
+    }
+    .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #333;
+}
+
+.footer a {
+  margin: 0 10px;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.blue-text {
+  color: blue;
+}
+
+  }
+</style>
+</head>
+<body>
+<header class="header">
+<div class = "logo">
+  <img src = "your-logo-url" alt = "Logo"/>
+</div>
+  <a href="#">Page 1</a>
+  <a href="#">Page 2</a>
+</header>
+<main class="main">
+  <img src="https://via.placeholder.com/1920x600" alt="Main background image">
+  <div class="text-area">
+    <h1>Your Main Heading</h1>
+    <p>Some text describing your content.</p>
+  </div>
+</main>
+<section>
+  <div class="container">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/500x300" alt="Image description">
+    </div>
+    <div class="text-container">
+      <h2>Section Heading</h2>
+      <p>Some text describing this section.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/500x300" alt="Image description">
+    </div>
+    <div class="text-container">
+      <h2>Section Heading</h2>
+      <p>Some text describing this section.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/500x300" alt="Image description">
+    </div>
+    <div class="text-container">
+      <h2>Section Heading</h2>
+      <p>Some text describing this section.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/500x300" alt="Image description">
+    </div>
+    <div class="text-container">
+      <h2>Section Heading</h2>
+      <p>Some text describing this section.</p>
+      <p><a href="https://www.example.com" class="blue-text">Learn more</a></p>
+    </div>
+  </div>
+  <!-- Add more containers as needed -->
+</section>
+<footer class="footer">
+  <a href="https://example.com/link1" target="_blank">
+    <img src="your-image-url-1" alt="Image button 1" />
+  </a>
+  <a href="https://example.com/link2" target="_blank">
+    <img src="your-image-url-2" alt="Image button 2" />
+  </a>
+  <p>&copy; 2023 Salvador Rodriguez. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
