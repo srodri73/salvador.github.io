@@ -21,6 +21,18 @@
       background-color: black;
       color: white;
     }
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
     .self-portrait {
       display: block;
@@ -116,6 +128,7 @@
       flex-basis: 50%;
       padding: 20px;
     }
+    
 /* Styles for mobile */
 @media (max-width: 768px) {
     .text-area {
@@ -157,6 +170,9 @@
   </style>
 </head>
 <body>
+  <div class="loader">
+    <!-- Your loading screen content here -->
+  </div>
   <header class="header">
     <div class="logo">
       <img src="https://github.com/srodri73/salvador.github.io/blob/947993e010146f7c6977f5a2eec5c053a11ea9e7/house@2x.png?raw=true" height="25" alt="home"/>
@@ -230,6 +246,12 @@
   </a>
   <p>&copy; 2023 Salvador Rodriguez. All rights reserved.</p>
 </footer>
+
+<script>
+  	window.addEventListener("load", function() {
+    document.body.classList.remove("loader");
+  });
+</script>
 
 </body>
 </html>
