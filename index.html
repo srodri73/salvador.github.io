@@ -7,8 +7,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/srodri73/salvador.github.io/blob/7d9b6fd7a57063d04299f5aaa5559e2625247121/favicon_io/apple-touch-icon.png?raw=true">
   <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/srodri73/salvador.github.io/blob/7d9b6fd7a57063d04299f5aaa5559e2625247121/favicon_io/favicon-32x32.png?raw=true">
   <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/srodri73/salvador.github.io/blob/7d9b6fd7a57063d04299f5aaa5559e2625247121/favicon_io/favicon-16x16.png?raw=true">
-  <link rel="manifest" href="https://github.com/srodri73/salvador.github.io/blob/7d9b6fd7a57063d04299f5aaa5559e2625247121/favicon_io/site.webmanifest">
-  
+
   <title>Salvador Rodriguez Portfolio</title>
   <style>
     * {
@@ -65,11 +64,14 @@
       background-color: transparent;
     }
     
-    .gradient-text span {
+    .gradient-text {
+      display: inline-block;
       background-image: linear-gradient(65deg, rgb(84 158 181), rgb(103 28 237));
       -webkit-background-clip: text;
-      color: transparent;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1px solid rgb(0 0 0);
     }
+
 
 
 
@@ -92,7 +94,7 @@
       color: white;
       border-radius: 20px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      text-align: center;
+      text-align: left;
 
     }
 
@@ -186,7 +188,7 @@
   <img src="https://github.com/srodri73/salvador.github.io/blob/46c2fa543fcf3522d50b114ffcf508d9605c2921/main_content.png?raw=true">
   <div class="text-area">
   <img class="self-portrait" src="https://github.com/srodri73/salvador.github.io/blob/626dddff45a11fd84ce48c8abbaf4018ab8bb38c/self_portrait2.PNG?raw=true" alt="Self Portrait" />
-  <h2>Hi, I'm Salvador Rodriguez, a mechanical engineer passionate about <span class="gradient-text"><span>product design.</span></span></h2>
+  <h2>Hi, I'm Salvador Rodriguez, a mechanical engineer passionate about <div class="gradient-text">product design.</div></h2>
   <h4>Feel free to explore my portfolio and download my resume</h4>
     
     <a href="your-image-url.jpg" download>
